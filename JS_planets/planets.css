@@ -1,0 +1,65 @@
+/*setting out the text and objects in the web app and setting background*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: darkblue;
+  background-image: url("https://cdn.dribbble.com/users/9987510/screenshots/17080253/media/a796fc5a022e978a1fc09d0e82a0d98b.gif")
+}
+
+/*stylising the heading*/
+.heading {
+  text-transform: uppercase;
+  font-family: Courier, monospace;
+  letter-spacing: 10px;
+  font-size: 50px;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+/*stylising all the text ('text is a class in html)*/
+.text {
+  font-family: "courier", monospace;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: whitesmoke;
+  width: 1000px;
+}
+/*creating the image holder with white circle as place holder before choice of planet*/
+.planetPlaceholder {
+  border: 7px solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  visibility: visible;
+  background-size: 200px
+}
+
+/*creates margin for all items in action divider (buttons)*/
+.action {
+  margin: 25px;
+}
+
+/*stylising the buttons*/
+button {
+  cursor: pointer;
+  background-color: lightpink;
+  border: none;
+  font-family: courier;
+  border-radius: 25%;
+  font-size: 15px;
+  margin-bottom: 20px
+}
+
+/*stylising the input box*/
+input {
+  font-size: 17px;
+  font-family: courier, monospace;
+  letter-spacing: 3px
+}
