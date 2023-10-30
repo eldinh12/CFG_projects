@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Creative Question</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+<!-- divider where all the content is -->
+  <div class="container" id="container">
+    <h1 class = "heading" id="heading">The Solar System</h1>
+<!-- button to toggle day and night mode -->
+    <div><button onclick="toggleDayNight()" id=toggleDayNight>Night Mode</button></div>
+    <p class="text">
+Welcome to the Solar System. I am your extraterrestial host and I am goign to take you on a journey to explore the wonders of the system we live in. <br>Click on a button below to learn more.
+    </p>
+<!-- divider for the planet placeholder-->
+    <div class="planetPlaceholder" id="imageCircle">
+    </div>
+<!-- where planet info will be displaced -->
+    <p class="text" id="planetInfo"></p>
+<!--  all buttons for each planet is within this divider  -->
+    <div class="action">
+      <button onclick="togglePlanet('Sun')" id="planetSun">Sun</button>
+      <button onclick="togglePlanet('Mercury')" id="planetMercury">Mercury</button>
+      <button onclick="togglePlanet('Venus')" id="planetVenus">Venus</button>
+      <button onclick="togglePlanet('Earth')" id="planetEarth">Earth</button>
+      <button onclick="togglePlanet('Mars')" id="planetMars">Mars</button>
+      <button onclick="togglePlanet('Jupiter')" id="planetJupiter">Jupiter</button>
+      <button onclick="togglePlanet('Saturn')" id="planetSaturn">Saturn</button>
+      <button onclick="togglePlanet('Uranus')" id="planetUranus">Uranus</button>
+      <button onclick="togglePlanet('Neptune')" id="planetNeptune">Neptune</button>
+      <button onclick="togglePlanet('Pluto')" id="planetPluto">Pluto</button>
+    </div>
+    <p class="text">Once you have explored all the different elements that make up our Solar System, here is your chance to guess which planet is my favorite. As a reward, I will grant you the chance to observe an extraterrestrial being...  </p>
+    <label for="choosePlanet" class="text" id="choosePlanet">Type in your 3 guesses here:</label><br>
+<!-- input box for user input -->
+    <input type="text" id="inputBox"><br>
+<!--  button to enter users attempt -->
+    <button onclick="enterButton()"  id="enterButton" >Enter</button>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
